@@ -20,7 +20,7 @@ public class PiComputeClusterApp implements Serializable {
 
     private void start(int slices) {
 
-        int numberOfThrows = 100000 * slices;
+        int numberOfThrows = 100 * slices;
         System.out.println("About to throw " + numberOfThrows
                 + " darts, ready? Stay away from the target!");
 
