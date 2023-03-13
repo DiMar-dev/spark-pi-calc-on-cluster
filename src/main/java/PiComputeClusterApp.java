@@ -29,7 +29,6 @@ public class PiComputeClusterApp implements Serializable {
                 .builder()
                 .appName("Spark Pi on cluster")
                 .master("spark://master.xxdzaijrs0uevebth4ebwy4fig.zrhx.internal.cloudapp.net:7077")
-                .config("spark.executor.memory", "4g")
                 .getOrCreate();
         session.sparkContext().setLogLevel("ERROR");
 
